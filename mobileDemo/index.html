@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			body {
+				margin: 0;
+			}
+			img {
+				border: 0;
+				vertical-align: top;
+			}
+			#wrap {
+				width: 16rem;
+			}
+			#cont {
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 200%;
+			}
+			.page {
+				position: relative;
+				float: left;
+				width: 16rem;
+			}
+			.page2>img  
+			{
+				width: 16rem;
+			}
+			.page1 {
+				position: relative;
+				width: 16rem;
+				height: 28.4rem;
+				background: url(imgs/p1_bg.jpg) no-repeat;
+				background-size: 16rem;
+			}
+			.bar {
+				position: absolute;
+				left: 1.7rem;
+				top: 3.5rem;
+				width: 14.275rem;
+			}
+			#btn {
+				position: absolute;
+				left: 12.55rem;
+				top: 9.5rem;
+				
+			}
+			.btn {
+				-webkit-animation: move4 100ms infinite;
+				-webkit-transform-origin: 50% 25%;
+			}
+			#btn img {
+				width: 2rem;
+			}
+			@-webkit-keyframes move4{
+				0% {
+					-webkit-transform: rotateZ(0);
+				}
+				25% {
+					-webkit-transform: rotateZ(12deg);
+				}
+				50% {
+					-webkit-transform: rotateZ(0);
+				}
+				75% {
+					-webkit-transform: rotateZ(-12deg);
+				}
+				100% {
+					-webkit-transform: rotateZ(0);
+				}
+			}
+			.back {
+				width: 16rem;
+				position: absolute;
+				text-align: center;
+				top: 12.5rem;
+			}
+			.back img {
+				width: 12.85rem;
+			}
+			@-webkit-keyframes move3{
+				0% {
+					left:5.8rem;
+					bottom: 5.4rem;
+				}
+				25% {
+					left:5.8rem;
+					bottom: 5.6rem;
+				}
+				50% {
+					left:5.8rem;
+					bottom: 5.4rem;
+				}
+				75% {
+					left:5.8rem;
+					bottom: 5.2rem;
+				}
+				100% {
+					left:5.8rem;
+					bottom: 5.4rem;
+				}
+			}
+			#classBegin {
+				width: 16rem;
+				position: absolute;
+				left: 5.8rem;
+				bottom: 5.4rem;
+				
+			}
+			.classBegin {
+				-webkit-animation: move3 100ms infinite;
+			}
+			#classBegin img {
+				width: 4.6rem;
+			}
+			
+			@-webkit-keyframes move{
+				0% {
+					left:0;
+					bottom: 0;
+				}
+				100% {
+					left: .5rem;
+					bottom: 2.8rem;
+				}
+			}
+			@-webkit-keyframes move2{
+				0% {
+					right:0;
+					bottom: 0rem;
+				}
+				100% {
+					right: .5rem;
+					bottom: 2.8rem;
+				}
+			}
+			.left {
+				/*display: none;*/
+				position: absolute;
+				left: .5rem;
+				bottom: 2.8rem;
+				-webkit-animation: move 4s;
+			}
+			.right {
+				position: absolute;
+				right: .5rem;
+				bottom: 2.8rem;
+				-webkit-animation: move2 4s;
+			}
+			.left>img,
+			.right>img {
+				width: 5rem;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div id="wrap">
+			<div id="cont">
+				<div class="page page1">
+					<div class="bar">
+						<img src="imgs/p1_logo.png" />
+					</div>
+					<div id="btn" >
+						<img src="imgs/keling.png" />
+					</div>
+					<div class="back">
+						<img id="start" src="imgs/p1_jz_start.png" />
+						<img id="end" src="imgs/p1_jz_end.png" />
+					</div>
+					<div id="classBegin">
+						<img src="imgs/start.png" />
+					</div>
+					<div class="left">
+						<img src="imgs/renwu_left.png" />
+					</div>
+					<div class="right">
+						<img src="imgs/renwu_right.png" />
+					</div>
+				</div>
+				<div class="page page2">
+					<img src="imgs/第二页-全屏图片.jpg" />
+				</div>
+			</div>
+		</div>
+<script type="text/javascript" src="jquery-3.1.1.js"></script>
+<script type="text/javascript" src="mTween.js"></script>
+<script type="text/javascript" src="index.js"></script>
+	</body>
+</html>
